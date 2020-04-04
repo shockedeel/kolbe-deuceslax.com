@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background-color:#283c34
 }
 
 .App-logo {
@@ -17,9 +17,9 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +35,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+td{
+  
+  padding:10px;
+}
+.column {
+  float: left;
+  width: 50%;
+  
+}
+.map{
+  float: right;
+  margin:15px;
+  padding:15px;
+
+}
+div{
+  align-content: center;
+  margin:0px;
+  text-align: center;
+}
+div.scroll { 
+  margin:4px, 4px; 
+  padding:4px; 
+  background-color: grey; 
+  width: 500px; 
+  height: 700px; 
+  overflow-x: hidden; 
+  overflow-x: auto; 
+  text-align:justify; 
+} 
+
+/* Clear floats after the columns */
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
 }
